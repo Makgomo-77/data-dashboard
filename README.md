@@ -1,16 +1,33 @@
-# React + Vite
+ API Dashboard with React & TanStack Query
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern dashboard that fetches and displays real-time data from two public APIs, featuring charts, filtering, and clean UI components.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-Real-time Data Fetching: Integrates with Open-Meteo (weather) and CoinGecko (crypto) APIs
+-Charts Visualization: Uses Recharts for temperature and cryptocurrency price charts
+-Search & Filter: Live search through cryptocurrency data with instant filtering
+- Responsive Design: Fully responsive layout built with Tailwind CSS
+-Error Handling: Graceful loading states and error boundaries
+- Dark/Light Mode: Clean, modern UI with consistent theming
 
-## React Compiler
+Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-React 18- Frontend framework
+- TanStack Query (React Query) - Data fetching and state management
+- Recharts- Chart visualization library
+- Tailwind CSS - Utility-first CSS framework
+- Axios - HTTP client for API requests
+- Lucide React - Icon library
 
-## Expanding the ESLint configuration
+ APIs Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1.Open-Meteo Weather API: Provides current weather, hourly forecast, and daily temperature data
+2.CoinGecko Cryptocurrency API: Provides real-time cryptocurrency prices, market caps, and 24h changes
+
+Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
